@@ -6,8 +6,7 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "watch": "tsc -w",
-    "prepare": "npm run build",
-    "build": "tsc --project tsconfig.json",
+    "build": "rmdir /s /q dist && tsc --project tsconfig.prd.json",
     "test": "node dist/test/test.js"
   },
   "keywords": [],
