@@ -1,17 +1,20 @@
 {
   "name": "find-process-filter",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "watch": "tsc -w",
+    "prepare": "npm run build",
+    "build": "tsc --project tsconfig.json",
     "test": "node dist/test/test.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "@types/node": "^18.11.18"
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.4"
   }
 }
