@@ -13,8 +13,13 @@ const __1 = require("..");
 (() => __awaiter(void 0, void 0, void 0, function* () {
     let result = yield (0, __1.findByProcessName)("notepad");
     console.log(result);
+    result = yield (0, __1.findExactlyByProcessName)("notepad.exe");
+    console.log(result);
     result = yield (0, __1.findExactlyByProcessName)("notepad.exe", { PID: 31832 });
     console.log(result);
     result = yield (0, __1.findByPID)(28332);
     console.log(result);
+    const result2 = yield (0, __1.getTaskList)();
+    console.log(result2);
 }))();
+//# sourceMappingURL=test.js.map
